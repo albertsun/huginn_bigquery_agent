@@ -10,7 +10,7 @@ Add this string to your Huginn's .env `ADDITIONAL_GEMS` configuration:
 
 ```ruby
 huginn_bigquery_agent
-# when only using this agent gem it should look like hits:
+# when only using this agent gem it should look like this:
 ADDITIONAL_GEMS=huginn_bigquery_agent
 ```
 

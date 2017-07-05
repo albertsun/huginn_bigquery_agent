@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
 
-  spec.add_runtime_dependency "huginn_agent", '~> 0.2'
+  spec.add_runtime_dependency "huginn_agent"
   spec.add_runtime_dependency "google-cloud-bigquery", '~> 0.27.0'
   # gem 'google-cloud-bigquery', '~> 0.27.0', require: 'google/cloud/bigquery'
 end
