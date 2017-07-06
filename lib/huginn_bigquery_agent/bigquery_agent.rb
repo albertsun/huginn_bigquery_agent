@@ -80,6 +80,7 @@ module Agents
 
     def default_options
       {
+        'expected_update_period_in_days' => 2,
         'project_id' => '',
         'query' => """SELECT * FROM `project_id.dataset.table` WHERE condition='condition' LIMIT 10""",
         'keyfile' => {
