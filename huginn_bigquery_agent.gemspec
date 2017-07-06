@@ -8,10 +8,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Albert Sun"]
   spec.email         = ["Albert.Sun@nytimes.com"]
 
-  spec.summary       = %q{Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{Write a longer description or delete this line.}
+  spec.summary       = %q{A Huginn agent for running BigQuery queries.}
 
-  spec.homepage      = "https://github.com/[my-github-username]/huginn_bigquery_agent"
+  spec.homepage      = "https://github.com/albertsun/huginn_bigquery_agent"
 
   spec.license       = "MIT"
 
@@ -26,5 +25,4 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "huginn_agent"
   spec.add_runtime_dependency "google-cloud-bigquery", '~> 0.27.0'
-  # gem 'google-cloud-bigquery', '~> 0.27.0', require: 'google/cloud/bigquery'
 end
