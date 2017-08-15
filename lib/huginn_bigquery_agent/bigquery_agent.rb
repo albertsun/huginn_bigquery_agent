@@ -26,12 +26,12 @@ module Agents
         "project_id": "huginn-123123",
         "private_key_id": "6d6b476fc6ccdb31e0f171991e5528bb396ffbe4",
         "private_key": "-----BEGIN PRIVATE KEY-----\\n...\\n-----END PRIVATE KEY-----\\n",
-        "client_email": "huginn-calendar@huginn-123123.iam.gserviceaccount.com",
+        "client_email": "huginn@huginn-123123.iam.gserviceaccount.com",
         "client_id": "123123...123123",
         "auth_uri": "https://accounts.google.com/o/oauth2/auth",
         "token_uri": "https://accounts.google.com/o/oauth2/token",
         "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/huginn-calendar%40huginn-123123.iam.gserviceaccount.com"
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/huginn%40huginn-123123.iam.gserviceaccount.com"
       }</code></pre>
 
       Agent Configuration:
@@ -141,12 +141,12 @@ module Agents
         )
       
       if options[:event_per_row].presence
-        results.each do |row|
+        results.all do |row|
           create_event :payload => row
         end
       else
         create_event :payload => {
-          results: results
+          results: results.all.to_a
         }
       end
     end
